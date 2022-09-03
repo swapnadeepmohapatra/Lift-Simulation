@@ -55,3 +55,73 @@ html {
 #down {
   background-color: #f9ba00;
 }
+
+.door1 {
+  position: relative;
+  width: 60px;
+  height: 98px;
+  background-color: #018bdb;
+  border-right: #00507e solid 1px;
+}
+.door2 {
+  position: relative;
+  width: 60px;
+  height: 98px;
+  background-color: #0281ca;
+  border-right: #00507e solid 1px;
+}
+.open {
+  animation: open-animate 2.5s ease-in-out infinite;
+}
+@keyframes open-animate {
+  0% {
+    width: 60px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+.close {
+  animation: close-animate 2.5s ease-in-out infinite;
+}
+@keyframes close-animate {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+
+label {
+  color: aliceblue;
+}
+input {
+  margin: 0 1rem;
+}
+
+.lift-down::after {
+  content: "↓";
+  position: absolute;
+  color: red;
+  font-size: 3rem;
+  animation: blink 1s infinite;
+}
+.lift-up::after {
+  content: "↑";
+  position: absolute;
+  color: red;
+  font-size: 3rem;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
