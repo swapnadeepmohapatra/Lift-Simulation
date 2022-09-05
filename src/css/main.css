@@ -125,3 +125,7 @@ input {
     opacity: 1;
   }
 }
+
+.form {
+  padding: 1rem;
+}

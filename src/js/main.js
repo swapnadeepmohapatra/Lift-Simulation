@@ -201,10 +201,10 @@ function LiftSimulator(el) {
 }
 
 const liftsim = LiftSimulator(document.getElementById("app"));
-// document.querySelector("button").addEventListener("click", () => {
-//   liftsim.start(
-//     Number(document.getElementById("floors").value),
-//     Number(document.getElementById("lifts").value)
-//   );
-// });
-liftsim.start(5, 2);
+document.querySelector("button").addEventListener("click", () => {
+  liftsim.start(
+    Number(document.getElementById("floors").value),
+    Number(document.getElementById("lifts").value)
+  );
+});
+// liftsim.start(5, 2);
